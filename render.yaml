@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: todoapp
+    env: native
+    buildCommand: ./render-build.sh
+    startCommand: dotnet out/TodoApp.dll
+    rootDir: TodoApp
